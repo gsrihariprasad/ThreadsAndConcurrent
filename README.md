@@ -47,3 +47,6 @@ Creates a new, empty map with an initial table size based on the given number of
  ## ConcurrentHashMap(Map<? extends K,? extends V> m) ##
 
 Creates a new map with the same mappings as the given map.
+# IMP Mehtods #
+## putIfAbsent(K key, V value) ##
+If the specified key is not already associated with a value, associate it with the given value.
