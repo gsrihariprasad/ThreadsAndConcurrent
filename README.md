@@ -1,11 +1,11 @@
-> Underlying Data Structure is Hashtable.
-> ConcurrentHashMap allows Concurrent read and Thread safe update operations.
-> To Perform read operation Thread won’t require any Lock.  But to perform update operation Thread requires Lock but it is the Lock of only a particular part of Map (Bucket Level Lock).
-> Instead of whole Map concurrent update achieved by internally dividing Map into smaller portion which is defined by concurrency level.
-> The Default concurrency level is 16.
-> That is ConcurrentHashMap allows simultaneous read operation and  simultaneously 16 write (update) operations.
-> Null is not allowed for both keys and values.
-> While one thread is iteration the other thread can perform update operation and ConcurrentHashMap never throw ConcurrentModificationException.
+>Underlying Data Structure is Hashtable.
+>ConcurrentHashMap allows Concurrent read and Thread safe update operations.
+>To Perform read operation Thread won’t require any Lock.  But to perform update operation Thread requires Lock but it is the Lock of only a particular part of Map (Bucket Level Lock).
+>Instead of whole Map concurrent update achieved by internally dividing Map into smaller portion which is defined by concurrency level.
+>The Default concurrency level is 16.
+>That is ConcurrentHashMap allows simultaneous read operation and  simultaneously 16 write (update) operations.
+>Null is not allowed for both keys and values.
+>While one thread is iteration the other thread can perform update operation and ConcurrentHashMap never throw ConcurrentModificationException.
 
 
 
