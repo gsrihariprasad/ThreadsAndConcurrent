@@ -50,3 +50,5 @@ Creates a new map with the same mappings as the given map.
 # IMP Mehtods #
 ## putIfAbsent(K key, V value) ##
 If the specified key is not already associated with a value, associate it with the given value.
+## remove(Object key, Object value) ##
+Removes the entry for a key only if currently mapped to a given value.
