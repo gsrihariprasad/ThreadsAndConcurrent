@@ -28,7 +28,7 @@ ConcurrentHashMap is more efficient for threaded applications.
 
 
 
-**ConcurrentHashMap()**
+## ConcurrentHashMap() ##
 
 Creates a new, empty map with the default initial table size (16).
 
