@@ -52,3 +52,7 @@ Creates a new map with the same mappings as the given map.
 If the specified key is not already associated with a value, associate it with the given value.
 ## remove(Object key, Object value) ##
 Removes the entry for a key only if currently mapped to a given value.
+## replace(K key, V oldValue, V newValue) ##
+Replaces the entry for a key only if currently mapped to a given value.
+## replaceAll(BiFunction<? super K,? super V,? extends V> function) ##
+Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception.
