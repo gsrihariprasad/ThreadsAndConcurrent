@@ -10,11 +10,7 @@ ConcurrentHashMap and Hashtable locking mechanism
 
 >ConcurrentHashMap returns Iterator, which fails-safe (i.e. iterator will make a copy of the internal data structure) on concurrent modification.
 
->ConcurrentHashMap uses a database shards logic (Segment<K, V>[] segments) is known as Concurrency-Level, i.e. divides the data into shards(segments) than puts locks on each shard (segment) instead of putting a single lock for whole data (Map). The default value is 16.
-
->To understand the ConcurrentHashMap more technically please look at this link
-
->The following analogy helps you get understand the concept only(not logic)
+>ConcurrentHashMap uses a database shards logic (Segment<K, V>[] segments) is known as Concurrency-Level, i.e. divides the data into shards(segments) than puts locks on each shard (segment) instead of putting a single lock for whole data (Map). The default value is *16*.
 
 >Assume Hashtable and ConcurrentHashMap are two types of Homes.
 Hashtable locks home's main door.
