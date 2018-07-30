@@ -24,3 +24,26 @@ ConcurrentHashMap locks specific room door instead of main door.
 Which is more efficient for threaded applications?
 
 ConcurrentHashMap is more efficient for threaded applications.
+
+
+
+
+Constructor and Description
+============================================================================
+
+
+ConcurrentHashMap()
+===================
+Creates a new, empty map with the default initial table size (16).
+ConcurrentHashMap(int initialCapacity)
+======================================
+Creates a new, empty map with an initial table size accommodating the specified number of elements without the need to dynamically resize.
+ConcurrentHashMap(int initialCapacity, float loadFactor)
+======================================
+Creates a new, empty map with an initial table size based on the given number of elements (initialCapacity) and initial table density (loadFactor).
+ConcurrentHashMap(int initialCapacity, float loadFactor, int concurrencyLevel)
+======================================
+Creates a new, empty map with an initial table size based on the given number of elements (initialCapacity), table density (loadFactor), and number of concurrently updating threads (concurrencyLevel).
+ConcurrentHashMap(Map<? extends K,? extends V> m)
+======================================
+Creates a new map with the same mappings as the given map.
