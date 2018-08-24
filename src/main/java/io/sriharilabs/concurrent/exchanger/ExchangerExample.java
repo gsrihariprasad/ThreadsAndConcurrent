@@ -8,7 +8,7 @@ public class ExchangerExample {
 	      Exchanger<String> exchanger = new Exchanger<String>();
 	 
 	      Thread t1 = new MyThread(exchanger, "I like coffee.");
-	      Thread t2 = new MyThread(exchanger, "I like tea");
+	      Thread t2 = new MyThread(exchanger, "I like tea       ");
 	      t1.start();
 	      t2.start();
 	   }

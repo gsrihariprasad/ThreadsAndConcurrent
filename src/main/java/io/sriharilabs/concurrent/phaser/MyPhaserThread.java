@@ -17,12 +17,14 @@ class MyPhaserThread extends Thread {
 	      System.out.println(this.getName() + " begin");
 	      try {
 	         Thread.sleep(sleep);
+	         System.out.println(this.getName() + " begin completed");
 	      } catch (Exception e) { 
 	      }
 	      phaser.arriveAndAwaitAdvance();
 	      System.out.println(this.getName() + " middle");
 	      try {
-	         Thread.sleep(sleep);
+	         Thread.sleep(sleep); 
+	         System.out.println(this.getName() + " middle completed");
 	      } catch (Exception e) { 
 	      }
 	      System.out.println(this.getName() + " end");

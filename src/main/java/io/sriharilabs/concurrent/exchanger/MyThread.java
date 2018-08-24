@@ -13,12 +13,12 @@ public class MyThread extends Thread{
 	 
 	   public void run() {
 	      try {
-	         System.out.println(this.getName() + " message: " + message);
+	         System.out.println(this.getName() + " message: " + message+this.currentThread().getName());
 	 
 	         // exchange messages
 	         message = exchanger.exchange(message);
 	 
-	         System.out.println(this.getName() + " message: " + message);
+	         System.out.println(this.getName() + " message: " + message+this.currentThread().getName());
 	      } catch (Exception e) {
 	      }
 	   }
